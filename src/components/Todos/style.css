@@ -1,0 +1,62 @@
+.todos {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.todos-input {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: 0 -4px 5px rgba(0, 0, 0, 0.1);
+    color: rgb(49, 49, 49);
+}
+
+
+.todos-input::placeholder {
+    color: rgb(165, 165, 165);
+    font-style: italic;  
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.5px
+}
+
+.todos-input:focus {
+    outline: none;
+}
+
+.todos-button {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 7px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todos-button button {
+    border: 1px solid transparent;
+    background: none;
+    color: rgb(165, 165, 165)
+}
+
+.fillter-buttons button:hover {
+    border: 1px solid rgba(255, 132, 132, 0.623);
+    border-radius: 3px;
+}
+
+.fillter-buttons {
+    display: flex;
+    column-gap: 5px;
+}
+
+.todos-delete:hover {
+    border: 1px solid rgba(255, 132, 132, 0.623);
+    border-radius: 3px;
+}
+
+.todos-active {
+    width: 90px;
+    text-align: left;
+}
